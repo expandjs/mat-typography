@@ -25,7 +25,7 @@
   ],
   "dependencies": {
     "expandjs": "ExpandJS/expandjs#0.9.1",
-    "font-roboto": "Polymer/font-roboto^0.5.6",
-    "polymer": "Polymer/polymer#^1.0.4"
+    "font-roboto": "Polymer/font-roboto#^0.5.6",
+    "polymer": "Polymer/polymer#^1.0.0"
   }
 }
