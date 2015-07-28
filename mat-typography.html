@@ -25,6 +25,26 @@ This style provides css variables for material typography.
 <link rel="import" href="../polymer/polymer.html">
 <link rel="import" href="../expandjs/expandjs.html">
 
+<style>
+    html {
+        background: hsla(0, 0%, 93%, 1);
+        color: hsla(0, 0%, 0%, 0.87);
+        font-family: RobotoDraft, Roboto, sans-serif;
+        font-size: 16px;
+        -webkit-font-smoothing: antialiased;
+        font-weight: 400;
+        letter-spacing: 0.01em;
+        line-height: 24px;
+        text-overflow: clip;
+        text-rendering: optimizeLegibility;
+        white-space: normal;
+    }
+
+    a {
+        color: inherit;
+    }
+</style>
+
 <style is="custom-style">
     :root {
 
@@ -176,42 +196,4 @@ This style provides css variables for material typography.
         };
 
     }
-
-    /* DEFAULT */
-
-    html {
-        background: hsla(0, 0%, 93%, 1);
-        color: hsla(0, 0%, 0%, 0.87);
-        font-family: RobotoDraft, Roboto, sans-serif;
-        font-size: 16px;
-        -webkit-font-smoothing: antialiased;
-        font-weight: 400;
-        letter-spacing: 0.01em;
-        line-height: 24px;
-        text-overflow: clip;
-        text-rendering: optimizeLegibility;
-        white-space: normal;
-    }
-
-    /* ANCHORS */
-
-    html /deep/ a {
-        color: inherit;
-    }
-
-    /* FONTS */
-
-    html /deep/ [font-type="caption"] { @apply(--mat-font-caption); }
-    html /deep/ [font-type="body"] { @apply(--mat-font-body); }
-    html /deep/ [font-type="body2"] { @apply(--mat-font-body2); }
-    html /deep/ [font-type="menu"] { @apply(--mat-font-menu); }
-    html /deep/ [font-type="subhead"] { @apply(--mat-font-subhead); }
-    html /deep/ [font-type="subhead2"] { @apply(--mat-font-subhead2); }
-    html /deep/ [font-type="title"] { @apply(--mat-font-title); }
-    html /deep/ [font-type="headline"] { @apply(--mat-font-headline); }
-    html /deep/ [font-type="display"] { @apply(--mat-font-display); }
-    html /deep/ [font-type="display2"] { @apply(--mat-font-display2); }
-    html /deep/ [font-type="display3"] { @apply(--mat-font-display3); }
-    html /deep/ [font-type="display4"] { @apply(--mat-font-display4); }
-
 </style>
