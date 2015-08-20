@@ -2,6 +2,7 @@
   "name": "mat-typography",
   "license": "BSD-3-Clause",
   "version": "0.9.6",
+  "main": "mat-typography.html",
   "description": "A custom style used to provide css variables for Material Design typography",
   "homepage": "http://expandjs.com/elements/mat-typography",
   "authors": [
@@ -16,9 +17,6 @@
     "html5",
     "expandjs",
     "web-components"
-  ],
-  "main": [
-    "mat-typography.html"
   ],
   "ignore": [
     "**/.*"
