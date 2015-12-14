@@ -7,7 +7,7 @@ The complete set of contributors may be found at https://expandjs.github.io/CONT
 -->
 
 <!--
-CSS variables that provide [Material Design typography styles](http://www.google.com/design/spec/style/typography.html#typography-styles).
+A custom style used to provide css variables for [Material Design typography styles](http://www.google.com/design/spec/style/typography.html#typography-styles).
 
 ```html
 <style>
@@ -17,53 +17,28 @@ CSS variables that provide [Material Design typography styles](http://www.google
 </style>
 
 <div id="headline">Headline</div>
-<div id="subhead">Subhead</h2>
+<div id="subhead">Subhead</div>
 <div id="button">Button</div>
 ```
 
-@element mat-typography
+@stylesheet mat-typography
 @description A custom style used to provide css variables for Material Design typography
-@keywords material design, material typography, web app, html5, expandjs, web-components
-@group decorators
+@keywords material design, material typography, font roboto, expandjs, web app, custom elements, web-components
+@group stylesheets
+@hot
+
 @homepage http://expandjs.com/elements/mat-typography
 @repository https://github.com/ExpandJS/mat-typography
 
 @dependency font-roboto PolymerElements/font-roboto#^1.0.0
-@dependency polymer Polymer/polymer#^1.1.0
-@dependency expandjs ExpandJS/expandjs#0.9.11
+@dependency polymer Polymer/polymer#^1.2.0
 -->
 
 <link rel="import" href="../font-roboto/roboto.html">
 <link rel="import" href="../polymer/polymer.html">
-<link rel="import" href="../expandjs/expandjs.html">
-
-<style>
-    html {
-        background: hsla(0, 0%, 93%, 1);
-        color: hsla(0, 0%, 0%, 0.87);
-        font-family: RobotoDraft, Roboto, sans-serif;
-        -webkit-font-smoothing: antialiased;
-
-        /* SUBHEAD */
-
-        font-size: 16px;
-        font-weight: 400;
-        letter-spacing: 0.01em;
-        line-height: 24px;
-        text-overflow: clip;
-        text-rendering: optimizeLegibility;
-        white-space: normal;
-    }
-
-    a {
-        color: inherit;
-    }
-</style>
 
 <style is="custom-style">
     :root {
-
-        /* CAPTION */
 
         --mat-font-caption: {
             font-size: 12px;
@@ -74,8 +49,6 @@ CSS variables that provide [Material Design typography styles](http://www.google
             text-rendering: optimizeLegibility;
             white-space: nowrap;
         };
-
-        /* BODY */
 
         --mat-font-body: {
             font-size: 14px;
@@ -97,8 +70,6 @@ CSS variables that provide [Material Design typography styles](http://www.google
             white-space: normal;
         };
 
-        /* MENU */
-
         --mat-font-menu: {
             font-size: 14px;
             font-weight: 500;
@@ -108,8 +79,6 @@ CSS variables that provide [Material Design typography styles](http://www.google
             text-rendering: optimizeLegibility;
             white-space: nowrap;
         };
-
-        /* BUTTON */
 
         --mat-font-button: {
             font-size: 14px;
@@ -121,8 +90,6 @@ CSS variables that provide [Material Design typography styles](http://www.google
             text-transform: uppercase;
             white-space: nowrap;
         };
-
-        /* SUBHEAD */
 
         --mat-font-subhead: {
             font-size: 16px;
@@ -144,8 +111,6 @@ CSS variables that provide [Material Design typography styles](http://www.google
             white-space: normal;
         };
 
-        /* TITLE */
-
         --mat-font-title: {
             font-size: 20px;
             font-weight: 500;
@@ -156,8 +121,6 @@ CSS variables that provide [Material Design typography styles](http://www.google
             white-space: nowrap;
         };
 
-        /* HEADLINE */
-
         --mat-font-headline: {
             font-size: 24px;
             font-weight: 400;
@@ -167,8 +130,6 @@ CSS variables that provide [Material Design typography styles](http://www.google
             text-rendering: optimizeLegibility;
             white-space: normal;
         };
-
-        /* DISPLAY */
 
         --mat-font-display: {
             font-size: 34px;
@@ -209,6 +170,11 @@ CSS variables that provide [Material Design typography styles](http://www.google
             text-rendering: optimizeLegibility;
             white-space: nowrap;
         };
+    }
 
+    html {
+        @apply(--mat-font-subhead);
+        font-family: RobotoDraft, Roboto, sans-serif;
+        -webkit-font-smoothing: antialiased;
     }
 </style>
